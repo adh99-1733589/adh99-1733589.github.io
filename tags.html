@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Xan's Website</title>
+    </head>
+    <body>
+        <h1>Xan Dindinger</h1>
+        <h2>About Me</h2>
+        <p>I'm from Alaska!!!!!</p>
+        <p>This class is so different lol</p>
+        <h2>My Favorite Sites</h2>
+        <ol>
+            <li>
+                <a
+                href="http://winhost6.ischool.uw.edu/gclass">gclass</a></li>
+            <li>
+                <a
+                href="https://www.netflix.com/browse">Netflix</a></li>
+            <li>
+                <a
+                href="https://www.hulu.com/">Hulu
+                </a></li>
+            <li><a
+                href="https://www.amazon.com">Amazon
+                </a></li>
+            <li><a
+                href="https://www.youtube.com/">Youtube
+                </a></li>
+        </ol>
+        <h2>My Favorite Pictures</h2>
+        <a
+         href="https://en.wikipedia.org/wiki/The_Office_%28U.S._TV_series%29">
+        <img src="https://c1.staticflickr.com/5/4115/4855342563_be82d613fb.jpg"title="The Office"style="width:200px;height:100px;margin:5px."></a>
+       <a
+       href="https://en.wikipedia.org/wiki/Juneau,_Alaska">
+       <img src="https://journeysviaggio.files.wordpress.com/2012/05/juneau-alaska.jpg"title="Juneau Alaska"style="width:100px;height:100px;margin:5px."></a>
+        
+       <p>Click the button to get your coordinates.</p>
+       
+       <button onclick="getLocation()">Try It</button>
+       
+       <p id="demo"></p>
+       
+       <script>
+       var x = document.getElementById("demo");
+       
+       function getLocation() {
+           if (navigator.geolocation) {
+               navigator.geolocation.getCurrentPosition(showPosition);
+           } else { 
+               x.innerHTML = "Geolocation is not supported by this browser.";
+           }
+       }
+       
+       function showPosition(position) {
+           x.innerHTML = "Latitude: " + position.coords.latitude + 
+           "<br>Longitude: " + position.coords.longitude;
+       }
+       </script>
+<p style="color:purple;">PURPLE</p>
+<p style="color:#E0C340;">AND GOLD</p>
+<p style="font-size:36px;">BE BOUNDLESS</p>
+
+    </body>
+</html>
